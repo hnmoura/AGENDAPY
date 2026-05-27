@@ -1,13 +1,28 @@
-Esse projeto consiste em uma Agenda Telefônica desenvolvida em Python 3 utilizando o conceito de CRUD (Create, Read, Update e Delete)
+# README — Agenda Telefônica CRUD em Python
 
-Os dados são armazenados no arquivo:
+## Descrição
 
-contatos.txt
+Este projeto consiste em uma Agenda Telefônica desenvolvida em Python utilizando o conceito de CRUD (Create, Read, Update e Delete).
 
-Como Executar o Projeto: 
+# Funcionalidades
 
-Instale o Python 3 na máquina
-Baixe o arquivo do projeto
-Execute o programa:
+* Cadastro de contatos
+* Listagem de contatos
+* Busca de contatos por nome
+* Edição de contatos
+* Exclusão de contatos
+* Salvamento automático em arquivo `.txt`
+
+
+# Como Executar o Projeto
+
+1. Instale o Python 3 na máquina
+
+2. Baixe o arquivo do projeto
+
+3. Execute o programa:
+
+```bash
 python agenda.py
+```
 
