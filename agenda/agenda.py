@@ -2,7 +2,7 @@
 ARQUIVO = "contatos.txt" #Aponta onde as informações serão salvas 
 
 def carregar_contatos(): #Função para carregar os contatos 
-    contatos = []
+    contatos = [] #Função vazia para guardar os contatos a medida em que são criados
 
     try:
         with open(ARQUIVO, "r", encoding="utf-8") as arquivo:
@@ -55,7 +55,7 @@ def cadastrar_contato(contatos): # Função para cadastrar os contatos
         "endereco": endereco
     }
 
-    contatos.append(contato)
+    contatos.append(contato) #Adiciona os contatos numa lista 
 
     salvar_contatos(contatos)
 
@@ -69,7 +69,7 @@ def listar_contatos(contatos): # Função para listar os contatos
         print("Nenhum contato cadastrado.")
         return
 
-    for i, contato in enumerate(contatos):
+    for i, contato in enumerate(contatos): #Os contatos são enumados aqui pra que sejam impressos com um número identificador 
 
         print(f"\nContato {i + 1}")
         print(f"Nome: {contato['nome']}")
@@ -88,7 +88,7 @@ def buscar_contato(contatos): #Função para listar os contatos
 
     for contato in contatos:
 
-        if contato["nome"].lower() == nome_busca.lower():
+        if contato["nome"]() == nome_busca():
 
             print("\nContato encontrado:")
             print(f"Nome: {contato['nome']}")
@@ -101,7 +101,7 @@ def buscar_contato(contatos): #Função para listar os contatos
     if not encontrado:
         print("Contato não encontrado.")
 
-def editar_contato(contatos): # Função para editar os contatos 
+def editar_contato(contatos): #Função para editar os contatos 
 
     print("\n EDITAR CONTATO")
 
@@ -109,7 +109,7 @@ def editar_contato(contatos): # Função para editar os contatos
 
     for contato in contatos:
 
-        if contato["nome"].lower() == nome_busca.lower():
+        if contato["nome"]() == nome_busca():
 
             print("Digite os novos dados:")
 
@@ -125,7 +125,7 @@ def editar_contato(contatos): # Função para editar os contatos
 
     print("Contato não encontrado.")
 
-def excluir_contato(contatos): # Função para excluir os contatos 
+def excluir_contato(contatos): #Função para excluir os contatos 
 
     print("\nEXCLUIR CONTATO")
 
@@ -133,7 +133,7 @@ def excluir_contato(contatos): # Função para excluir os contatos
 
     for contato in contatos:
 
-        if contato["nome"].lower() == nome_busca.lower():
+        if contato["nome"]() == nome_busca():
 
             contatos.remove(contato)
 
@@ -146,7 +146,7 @@ def excluir_contato(contatos): # Função para excluir os contatos
 
 def menu():
 
-    contatos = carregar_contatos()
+    contatos = carregar_contatos() #Os contatos são carregados aqui e enquanto o usuário digitar opções válidas as informação são exibidas 
 
     while True:
 
