@@ -108,7 +108,7 @@ def editar_contato(contatos): #Função para editar os contatos
 
     for contato in contatos:
 
-        if contato["nome"] == nome_busca:
+        if contato["nome"].strip().lower() == nome_busca.strip().lower() == nome_busca:
 
             print("Digite os novos dados:")
 
@@ -132,7 +132,7 @@ def excluir_contato(contatos): #Função para excluir os contatos
 
     for contato in contatos:
 
-        if contato["nome"] == nome_busca:
+        if contato["nome"].strip().lower() == nome_busca.strip().lower() == nome_busca:
 
             contatos.remove(contato)
 
