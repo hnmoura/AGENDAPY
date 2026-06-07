@@ -1,4 +1,0 @@
-Joao Pedro ;40028922;joao@pedro.com;rua y, 22
-PAULO ;8199556611;paulo@gmail.com;rua um, 22 
-paulo 3;33;22@gmail;rua 30
-ana;81999516223;ingazeirahillary@gmail.com;rua 30, 22
