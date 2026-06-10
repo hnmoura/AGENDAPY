@@ -88,7 +88,7 @@ def buscar_contato(contatos):
 
     for contato in contatos:
 
-        if contato["nome"].strip().lower() == nome_busca.strip().lower(): #É importante que haja o filtro de letras minúsculas pra que as informações sejam exibidas corretamente   
+        if contato["nome"].strip().lower() == nome_busca.strip().lower(): #É importante que haja o filtro de letras minúsculas pra que as informações sejam exibidas independentemente da formatação  
             print("\nContato encontrado:")
             print(f"Nome: {contato['nome']}")
             print(f"Telefone: {contato['telefone']}")
