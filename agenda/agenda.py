@@ -95,10 +95,10 @@ def buscar_contato(contatos):
             print(f"Email: {contato['email']}")
             print(f"Endereço: {contato['endereco']}")
 
-            encontrado = True
+            encontrado = True #Se todas as informações forem declaradas corretamente elas serão exibidas
 
     if not encontrado:
-        print("Contato não encontrado.")
+        print("Contato não encontrado.") # Se não, o sistema retorna uma mensagem de contato não encontrado
 
 def editar_contato(contatos): #Função para editar os contatos 
 
