@@ -4,7 +4,7 @@ Descrição
 
 Este repositório consiste em uma agenda telefônica desenvolvida em Python utilizando o conceito de CRUD (Create, Read, Update e Delete).
 
-# Conceitos aplicados
+## Conceitos aplicados
 
 - Persistência de dados 
 - Estruturas de repetição 
