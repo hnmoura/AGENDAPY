@@ -2,7 +2,7 @@ README — Agenda Telefônica CRUD em Python
 
 Descrição
 
-Este projeto consiste em uma Agenda Telefônica desenvolvida em Python utilizando o conceito de CRUD (Create, Read, Update e Delete).
+Este repositório consiste em uma agenda telefônica desenvolvida em Python utilizando o conceito de CRUD (Create, Read, Update e Delete).
 
 
 
