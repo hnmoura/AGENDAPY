@@ -12,7 +12,7 @@ Este repositório consiste em uma agenda telefônica desenvolvida em Python util
 
 ## Como Executar o Projeto
 
-1. Instale o Python 3 na máquina
+1. Instale o Python 3
 
 2. Baixe o arquivo do projeto
 
