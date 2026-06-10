@@ -5,7 +5,7 @@ def carregar_contatos(): #Função para carregar os contatos
     contatos = [] #Função vazia para guardar os contatos a medida em que são criados
 
     try:
-        with open(ARQUIVO, "r", encoding="utf-8") as arquivo:
+        with open(ARQUIVO, "r", encoding="utf-8") as arquivo: 
             linhas = arquivo.readlines()
 
             for linha in linhas:
@@ -150,8 +150,8 @@ def menu():
     while True:
 
         print("\nAGENDA TELEFÔNICA")
-        print("1 - Cadastrar contato")
-        print("2 - Listar contatos")
+        print("1 - Cadastrar novo contato")
+        print("2 - Listar contatos salvos")
         print("3 - Buscar contato")
         print("4 - Editar contato")
         print("5 - Excluir contato")
@@ -180,4 +180,4 @@ def menu():
         else:
             print("Opção inválida!")
 
-menu()
+menu() # O menu volta a ser exibido quando o usuário informa um opção inválida 
