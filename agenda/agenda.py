@@ -2,7 +2,7 @@
 ARQUIVO = "contatos.txt" #Aponta onde as informações serão salvas 
 
 def carregar_contatos(): #Função para carregar os contatos 
-    contatos = [] #Função vazia para guardar os contatos a medida em que são criados
+    contatos = [] #lista vazia para carregar os contatos a medida em que são criados
 
     try:
         with open(ARQUIVO, "r", encoding="utf-8") as arquivo: 
@@ -18,7 +18,7 @@ def carregar_contatos(): #Função para carregar os contatos
                     "endereco": dados[3]
                 }
 
-                contatos.append(contato)
+                contatos.append(contato) 
 
     except FileNotFoundError:
         pass
